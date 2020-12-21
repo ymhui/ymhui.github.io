@@ -333,7 +333,7 @@
                         404
                     </div>
                     <div class="description center-align">
-                        你来到了没有知识的荒原 :(
+                        Oops～，我崩溃了！找不到你想要的页面 :(
                     </div>
                 </div>
             </div>
@@ -345,6 +345,11 @@
     // 每天切换 banner 图.  Switch banner image every day.
     $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
+
+来源: 洪卫の博客
+作者: 洪卫
+文章链接: https://sunhwee.com/posts/6e8839eb.html#toc-heading-25
+本文章著作权归作者所有，任何形式的转载都请注明出处。
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
@@ -389,7 +394,7 @@
 
 
 
-    <a href="http://wpa.qq.com/msgrd?v=3&uin=792321264&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
+    <a href="http://wpa.qq.com/msgrd?v=3&uin=3257673819&site=qq&menu=yes" class="tooltipped" target="_blank" data-tooltip="访问我的知乎" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
@@ -496,8 +501,8 @@ $(function () {
     <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
     <script src="/js/matery.js"></script>
 
-    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
-    </script>
+    <!--<script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
+    </script>-->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -513,7 +518,33 @@ $(function () {
 
     <!-- 雪花特效 -->
     
-
+<div id="he-plugin-simple"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "modules": "01234",
+    "background": 1,
+    "tmpColor": "FFFFFF",
+    "tmpSize": 16,
+    "cityColor": "FFFFFF",
+    "citySize": 16,
+    "aqiSize": 16,
+    "weatherIconSize": 24,
+    "alertIconSize": 18,
+    "padding": "10px 10px 10px 10px",
+    "shadow": "1",
+    "language": "auto",
+    "borderRadius": 5,
+    "fixed": "true",
+    "vertical": "middle",
+    "horizontal": "center",
+    "left": 15,
+    "top": 15,
+    "key": "af28aa8fe9ca4f87a500e411e6aadf63"
+  }
+}
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 </body>
 
 </html>
