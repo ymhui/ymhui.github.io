@@ -75,7 +75,11 @@
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <body>
-
+<!--
+	<div style="z-index:999;position: fixed; top: 15px; left: 15px;">
+	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://weather.seniverse.com/?token=e910f0df-12de-424c-88e6-f17adda1bf98">
+	</iframe>-->
+	</div>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -580,7 +584,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"javaweb","value":4},{"name":"hexo搭建博客","value":1},{"name":"c++算法竞赛","value":6},{"name":"idea","value":1}],
+                data: [{"name":"hexo搭建博客","value":1},{"name":"javaweb","value":4},{"name":"c++算法竞赛","value":6},{"name":"idea","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -807,14 +811,14 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/javaweb/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">javaweb</span>
+            <a href="/tags/hexo/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
             </a>
             
             
             
-            <a href="/tags/hexo/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
+            <a href="/tags/javaweb/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">javaweb</span>
             </a>
             
             
@@ -911,9 +915,12 @@
 <li><b>铜牌</b><br>ACM-ICPC上海大都会赛</li>
 </ul>
 <h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><ul>
-<li><b>电子邮箱</b><br><a href="mailto:godweiyang@gmail.com" target="_blank" rel="noopener">godweiyang@gmail.com</a><br><a href="mailto:i@godweiyang.com" target="_blank" rel="noopener">i@godweiyang.com</a><br><a href="mailto:792321264@qq.com" target="_blank" rel="noopener">792321264@qq.com</a></li>
-<li><b>地址</b><br>上海市普陀区中山北路3663号理科大楼B906，邮编200062</li>
-<li><b>QQ 技术交流群</b><br>864832264</li>
+<li><p><b>电子邮箱</b></p>
+</li>
+<li><p><b>地址</b><br>上海市普陀区中山北路3663号理科大楼B906，邮编200062</p>
+</li>
+<li><p><b>QQ 技术交流群</b><br>864832264</p>
+</li>
 </ul>
 <p><img src="/medias/contact.jpg" alt></p>
 
@@ -1091,10 +1098,13 @@ $(function () {
 
     <!-- 雪花特效 -->
     
-<div id="he-plugin-simple"></div>
+<!--
+<div id="he-plugin-simple" style="z-index:999;position: fixed; top: 15px; left: 15px;"></div>
 <script>
 WIDGET = {
   CONFIG: {
+	"position": "fixed",
+	"z-index": 999,
     "modules": "01234",
     "background": 1,
     "tmpColor": "FFFFFF",
@@ -1118,6 +1128,22 @@ WIDGET = {
 }
 </script>
 <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+-->
+<div id="tp-weather-widget"  style=" z-index:999;position: fixed; top: 28px; left: 325px;"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "slim",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "e910f0df-12de-424c-88e6-f17adda1bf98",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 </body>
 
 </html>

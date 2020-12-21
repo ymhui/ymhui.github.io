@@ -92,7 +92,11 @@ ctrl +">
 <link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
 <body>
-
+<!--
+	<div style="z-index:999;position: fixed; top: 15px; left: 15px;">
+	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://weather.seniverse.com/?token=e910f0df-12de-424c-88e6-f17adda1bf98">
+	</iframe>-->
+	</div>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -1426,10 +1430,13 @@ $(function () {
 
     <!-- 雪花特效 -->
     
-<div id="he-plugin-simple"></div>
+<!--
+<div id="he-plugin-simple" style="z-index:999;position: fixed; top: 15px; left: 15px;"></div>
 <script>
 WIDGET = {
   CONFIG: {
+	"position": "fixed",
+	"z-index": 999,
     "modules": "01234",
     "background": 1,
     "tmpColor": "FFFFFF",
@@ -1453,6 +1460,22 @@ WIDGET = {
 }
 </script>
 <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+-->
+<div id="tp-weather-widget"  style=" z-index:999;position: fixed; top: 28px; left: 325px;"></div>
+  <script>
+    (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+    window.SeniverseWeatherWidget('show', {
+      flavor: "slim",
+      location: "WX4FBXXFKE4F",
+      geolocation: true,
+      language: "zh-Hans",
+      unit: "c",
+      theme: "auto",
+      token: "e910f0df-12de-424c-88e6-f17adda1bf98",
+      hover: "enabled",
+      container: "tp-weather-widget"
+    })
+  </script>
 </body>
 
 </html>
