@@ -76,10 +76,8 @@
 
 <body>
 <!--
-	<div style="z-index:999;position: fixed; top: 15px; left: 15px;">
 	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://weather.seniverse.com/?token=e910f0df-12de-424c-88e6-f17adda1bf98">
 	</iframe>-->
-	</div>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -175,7 +173,7 @@
         <div class="logo-name">Ymhui</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            像我这样优秀的人
             
         </div>
     </div>
@@ -344,7 +342,8 @@
 
             <div class="description center-align">
                 
-                    This is your root _config.yml 'description' value.
+                    像我这样优秀的人
+                    <!-- <span id="jinrishici-sentence">正在加载今日诗词...</span> -->
                 
             </div>
         </div>
@@ -532,7 +531,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12"]
+            data: ["2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02"]
         },
         yAxis: {
             type: 'value',
@@ -542,7 +541,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,12],
+                data: [0,0,0,0,0,0,0,0,0,0,12,0,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -584,7 +583,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"hexo搭建博客","value":1},{"name":"javaweb","value":4},{"name":"c++算法竞赛","value":6},{"name":"idea","value":1}],
+                data: [{"name":"javaweb","value":4},{"name":"c++算法竞赛","value":6},{"name":"hexo搭建博客","value":1},{"name":"idea","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -811,12 +810,6 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/hexo/" target="_blank">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
-            </a>
-            
-            
-            
             <a href="/tags/javaweb/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">javaweb</span>
             </a>
@@ -825,6 +818,12 @@
             
             <a href="/tags/c/" target="_blank">
                 <span class="chip center-align waves-effect waves-light chip-default">c++</span>
+            </a>
+            
+            
+            
+            <a href="/tags/hexo/" target="_blank">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
             </a>
             
             
