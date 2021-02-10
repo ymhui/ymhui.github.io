@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Ymhui</title>
   
-  <subtitle>偏偏秉烛夜游，午夜星辰似奔走之友</subtitle>
+  <subtitle>给我一点阳光</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://w7qwfl.coding-pages.com/"/>
-  <updated>2020-12-21T12:53:53.976Z</updated>
+  <updated>2021-02-10T06:24:21.291Z</updated>
   <id>http://w7qwfl.coding-pages.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端渲染HTML与后端渲染HTML的区别</title>
+    <link href="http://w7qwfl.coding-pages.com/posts/9dec.html"/>
+    <id>http://w7qwfl.coding-pages.com/posts/9dec.html</id>
+    <published>2021-02-10T05:37:05.579Z</published>
+    <updated>2021-02-10T06:24:21.291Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前端渲染HTML与后端渲染HTML的区别&quot;&gt;&lt;a href=&quot;#前端渲染HTML与后端渲染HTML的区别&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="其他" scheme="http://w7qwfl.coding-pages.com/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+      <category term="其他" scheme="http://w7qwfl.coding-pages.com/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
   
   <entry>
     <title>ST表</title>
